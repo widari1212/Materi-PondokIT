@@ -1,0 +1,26 @@
+Program Pengoperasian_Microsoft_Word
+Deklarasi :
+tidak ada nilai angka
+
+Algoritma:
+Masuk => 'start menu windows'
+klik => 'Microsoft Word'
+Variabel (harga murah)
+keadaan 1
+	if
+		“tidak memiliki keyboard untuk mengetik”
+	else
+		klik  => ‘Start menu’
+		klik  => ‘accessories’
+		klik  => ‘on screen keyboad’
+		‘on screen keyboard’ => selesai
+keadaan 2
+	if
+		(“selesai”)
+	else 
+		klik  => ‘Menu Microsoft World’
+		klik  => ‘Save as’
+ketik nama file ‘latihan.txt’
+klik save
+selesai
+}
