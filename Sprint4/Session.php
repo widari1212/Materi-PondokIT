@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
     $_SESSION['nama']=$nama;
     $_SESSION['password']=$password;
 
-    header('location:kurir.php');
+    header('location:Kurir.php');
 }
 
 ?>

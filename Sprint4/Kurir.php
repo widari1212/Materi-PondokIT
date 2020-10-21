@@ -80,10 +80,10 @@
 session_start();
 
 if (!isset($_SESSION)){
-	header('location: session.php');
+	header('location: Session.php');
 }
 if (isset($_POST['logout'])) {
 		session_unset();
-		header ('location: session.php');
+		header ('location: Session.php');
 	}
 ?>         
