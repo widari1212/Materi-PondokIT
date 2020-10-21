@@ -1,5 +1,5 @@
 <?php 
-if(isset($_COOKIE['nama'])){
+if(isset($_COOKIE['username'])){
     header('location:barang.php');
 }
 ?>
@@ -34,10 +34,10 @@ if(isset($_COOKIE['nama'])){
 </html>
 <?php
 if (isset($_POST['submit'])){
-    $nama = $_POST['nama'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
 
-    setcookie('nama', $nama, time()+3600,"/");
+    setcookie('username', $username, time()+3600,"/");
     setcookie('password', $password, time()+3600,"/");
     header('location:barang.php');
 }
