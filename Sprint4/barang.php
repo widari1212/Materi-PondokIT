@@ -79,7 +79,7 @@
 </html>
 <?php
 if (isset($_POST['logout'])) {
-    setcookie('nama', $nama, time() - 3600, "/");
+    setcookie('username', $username, time() - 3600, "/");
 	setcookie('password', $password, time() - 3600, "/");
 	header ('location: cookie.php');
 }
