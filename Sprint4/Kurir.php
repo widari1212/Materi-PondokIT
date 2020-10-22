@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,13 +81,12 @@
 </body>
 </html>
 <?php
-session_start();
 
 if (!isset($_SESSION)){
 	header('location: Session.php');
 }
-if (isset($_POST['logout'])) {
-		session_unset();
-		header ('location: Session.php');
-	}
-?>         
+// if (isset($_POST['logout'])) {
+// 		session_unset();
+// 		header ('location: Session.php');
+// 	}
+// ?>         
