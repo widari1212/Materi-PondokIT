@@ -1,14 +1,11 @@
-<?php 
+<?php
 
-class Config {
+class Config
+{
+    public function connect()
+    {
+        $con = mysqli_connect('localhost', 'widari', '<thisismypass>', 'artikel'); 
 
-    public function db(){
-        $user = "widari";
-        $pass = "<thisismypass>";
-        $dbhs = "localhost";
-        $dbnm = "app_pondok";
-
-        $db = new PDO("mysql:host=$dbhs;dbname=$dbnm", $user, $pass);
-        return $db;
+        return $con;
     }
 }
