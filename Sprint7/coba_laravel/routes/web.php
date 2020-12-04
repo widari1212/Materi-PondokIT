@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', 'PagesController@home');
 // Route::get('/about', 'PagesController@about');
 
-Route::get('/mahasiswa', 'MahasiswaController@index');
+// Route::get('/mahasiswa', 'MahasiswaController@index');
 
 //students
 // Route::get('/students', 'StudentsController@index');
@@ -40,7 +40,7 @@ Route::resource('students', 'StudentsController');
 
 
 
-Auth::routes(['verify'=>true]);
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -49,6 +49,3 @@ Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 // Route::group(['prefix' => 'admin', "middleware" => "auth"], function () {
 // });
-
-
-
